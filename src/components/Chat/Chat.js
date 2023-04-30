@@ -25,7 +25,7 @@ const Chat = () => {
     var key1 = user.email + "-" + query.sendermail;
     var key2 = query.sendermail + "-" + user.email;
     axios
-      .get("http://localhost:3001/api/getmessages/", {
+      .get("https://ticketresolving.onrender.com/api/getmessages/", {
         params: {
           key1: key1,
           key2: key2,
@@ -44,7 +44,7 @@ const Chat = () => {
       return;
     } else {
       axios
-        .post("http://localhost:3001/sendmessage", {
+        .post("https://ticketresolving.onrender.com/sendmessage", {
           sender_id: user.email,
           receiver_id: query.sendermail,
           message: message,

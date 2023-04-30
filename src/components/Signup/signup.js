@@ -31,7 +31,7 @@ const Signup = () => {
       alert("please fill all fields");
     } else {
       axios
-        .post("http://localhost:3001/signup", {
+        .post("https://ticketresolving.onrender.com/signup", {
           name: name,
           email: email,
           password: password,

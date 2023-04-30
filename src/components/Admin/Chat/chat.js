@@ -24,7 +24,7 @@ const Chat = () => {
     var key1 = query.sendermail + "-" + query.receivermail;
     var key2 = query.receivermail + "-" + query.sendermail;
     axios
-      .get("http://localhost:3001/api/getmessages/", {
+      .get("https://ticketresolving.onrender.com/api/getmessages/", {
         params: {
           key1: key1,
           key2: key2,
@@ -43,7 +43,7 @@ const Chat = () => {
       return;
     } else {
       axios
-        .post("http://localhost:3001/sendmessage", {
+        .post("https://ticketresolving.onrender.com/sendmessage", {
           sender_id: query.sendermail,
           receiver_id: query.receivermail,
           message: message,
@@ -93,7 +93,7 @@ const Chat = () => {
                 color="secondary"
                 onClick={() => {
                   axios
-                    .put("http://localhost:3001/api/closetask", {
+                    .put("https://ticketresolving.onrender.com/api/closetask", {
                       id: query.id,
                       status: "closed"
                     })

@@ -17,7 +17,7 @@ const Contentthree = () => {
 
   function getData() {
     axios
-      .get("http://localhost:3001/api/viewqueries/", {
+      .get("https://ticketresolving.onrender.com/api/viewqueries/", {
         params: {
           email: user.email
         }

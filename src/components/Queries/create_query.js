@@ -38,7 +38,7 @@ const Createquery = () => {
       alert("please fill all fields");
     } else {
       axios
-        .post("http://localhost:3001/createquery", {
+        .post("https://ticketresolving.onrender.com/createquery", {
           category: category,
           subcategory: subcategory,
           tag: tag,

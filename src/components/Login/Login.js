@@ -19,7 +19,7 @@ const Login = () => {
       alert("please fill all fields");
     } else {
       axios
-        .get("http://localhost:3001/api/login/", {
+        .get("https://ticketresolving.onrender.com/api/login/", {
           params: {
             email: email,
             password: password

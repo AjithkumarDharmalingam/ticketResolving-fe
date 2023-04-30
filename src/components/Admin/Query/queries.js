@@ -17,7 +17,7 @@ const Queries = () => {
     [querystate]
   );
   function getData() {
-    axios.get("http://localhost:3001/api/viewuserqueries/").then(res => {
+    axios.get("https://ticketresolving.onrender.com/api/viewuserqueries/").then(res => {
       setqueries(res.data);
     });
   }
@@ -112,7 +112,7 @@ const Queries = () => {
                     color="secondary"
                     onClick={() => {
                       axios
-                        .put("http://localhost:3001/api/assigntask", {
+                        .put("https://ticketresolving.onrender.com/api/assigntask", {
                           id: data._id,
                           mentoremail: user.email
                         })
