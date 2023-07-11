@@ -87,6 +87,7 @@ const Login = () => {
               id="outlined-basic"
               label="Your password"
               variant="outlined"
+              type="password"
               size="small"
               value={password}
               onChange={e => setpassword(e.target.value)}

@@ -97,6 +97,7 @@ const Signup = () => {
               label="Your password"
               variant="outlined"
               size="small"
+              type="password"
               value={password}
               onChange={e => setpassword(e.target.value)}
               fullWidth
